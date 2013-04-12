@@ -1,66 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Cliprz by Cliprz</title>
+<head>
+<meta charset="utf-8">
+<title>Cliprz | Mini PHP framework</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+<style>
+body { padding-top: 60px; }
+.head-box { background: url(assets/images/abstract_wallpaper_09.jpg) top center no-repeat; margin: -60px 0 20px 0; min-height: 200px; border-bottom: 4px solid #FF9900; }
+.head-box .head-body-box { color: #FFF; text-shadow: 0px -1px 0px #000; padding: 60px 00px 40px; width: 90%; margin: 0 auto; position: relative; font-weight: bold; }
+</style>
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css">
+<!--[if lt IE 9]>
+    <script src="assets/javascript/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript" src="assets/javascript/jquery.js"></script>
+<script type="text/javascript" src="assets/javascript/tipsy.js"></script>
+<script type="text/javascript" src="assets/javascript/bootstrap.js"></script>
+</head>
+<body>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Cliprz</h1>
-        <p>Cliprz is an open source web application framework. It is written in PHP, easy, fast, simple and secure.</p>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-        <p class="view"><a href="https://github.com/Cliprz/Cliprz">View the Project on GitHub <small>Cliprz/Cliprz</small></a></p>
+            <a class="brand" href="">Cliprz framework</a>
 
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="http://cliprz.github.com/cliprz">Home</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                    <li><a href="http://www.cliprz.org">Official website</a></li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Download <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://github.com/Cliprz/cliprz/zipball/master">.ZIP</a></li>
+                            <li><a href="https://github.com/Cliprz/cliprz/tarball/master">.RAR</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Source</li>
+                            <li><a href="https://github.com/Cliprz/cliprz">Project on GitHub</a></li>
+                        </ul>
+                    </li>
+                </ul>
 
-        <ul>
-          <li><a href="https://github.com/Cliprz/Cliprz/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/Cliprz/Cliprz/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/Cliprz/Cliprz">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
+                <ul class="nav pull-right">
+                    <li><a href="#">العربية</a></li>
+                </ul>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/Cliprz">Cliprz</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+            </div><!--/.nav-collapse -->
+        </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+</div>
+
+<div class="head-box">
+            <div class="head-body-box">
+            <h1>Cliprz framwork</h1>
+            <hr>
+            It's a free and open source PHP framework written in PHP version 5.3.0 or higher,
+            This framework help you to create a PHP project without writing big codes,
+            It's easy, fast, simple and secure,
+            What distinguishes Cliprz framework You can routing URLs without using controller/functions/parameters,
+            You can use MySQL database driver object (easy MySQL system),
+            Easy way to create fast admin panel (scaffold) system with full pages control,
+            Help plugins and libraries,
+            That's not all there is more.
+            <br>
+            <br>
+            <p>
+                <div class="btn-group">
+                  <a href="https://github.com/Cliprz/cliprz/zipball/master" class="btn"><img src="assets/images/glyphicons_134_inbox_in.png" alt="" /><br>Download as .zip</a>
+                  <a href="https://github.com/Cliprz/cliprz/tarball/master" class="btn"><img src="assets/images/glyphicons_134_inbox_in.png" alt="" /><br>Donwload as .rar</a>
+                </div>
+            </p>
+            </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="span6">
+            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/cliprz" data-widget-id="322774289285775360">Tweets by @cliprz</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <hr class="visible-phone visible-tablet">
+        </div>
+
+        <div class="span6">
+            <div><a href="#" class="thumbnail"><img style="width: 200px; height: 200px;" src="assets/images/heckert_gnu.big.png" alt="" /></a></div>
+            <h2>License</h2>
+            <hr>
+            <p>
+            This program is released as free software under the Affero GPL license. You can redistribute it and/or modify it under the terms of this license which you can read by viewing the included agpl.txt or online at <a href="http://www.gnu.org/licenses/gpl.html">www.gnu.org/licenses/agpl.html</a>. Removal of copyright header from files is strictly prohibited without written permission from the original author(s).
+            <br><br>
+            Copyright &copy; 2012 - 2013 by the Cliprz Development Team. Cliprz framework licensed under GNU AFFERO GENERAL PUBLIC LICENSE, Version 3, You can read the text file included with the project named agpl.txt or read a online version <a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a>.
+            </p>
+            <hr class="visible-phone visible-tablet">
+        </div>
+
+    </div>
+</div>
+
+<hr>
+
+<footer>
+<div class="container">
+    <div class="row">
+            <div class="pull-left">
+                <a href="https://github.com/Cliprz/cliprz"><img src="assets/images/glyphicons_401_github.png" alt="" /></a>&nbsp;
+                <a href="http://www.youtube.com/cliprz"><img src="assets/images/glyphicons_402_youtube.png" alt="" /></a>&nbsp;
+                <a href="https://www.facebook.com/groups/cliprz.org/"><img src="assets/images/glyphicons_410_facebook.png" alt="" /></a>&nbsp;
+                <a href="http://www.twitter.com/cliprz"><img src="assets/images/glyphicons_411_twitter.png" alt="" /></a>
+            </div>
+            <div class="pull-right">
+                &copy; Cliprz
+            </div>
+            <div class="clearfix"></div>
+    </div>
+</div>
+</footer>
+
+<br>
+
+
+</body>
 </html>
