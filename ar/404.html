@@ -18,6 +18,13 @@
 <script type="text/javascript" src="assets/javascript/jquery.js"></script>
 <script type="text/javascript" src="assets/javascript/tipsy.js"></script>
 <script type="text/javascript" src="assets/javascript/bootstrap.js"></script>
+
+<script type="text/javascript">
+     $.get('language.html', function(data) {
+       $('#language').html(data);
+     });           
+</script>
+
 </head>
 <body dir="rtl">
 
@@ -49,9 +56,8 @@
                     </li>
                 </ul>
 
-                <ul class="nav pull-left">
-                    <li><a href="../index.html">English</a></li>
-                </ul>
+               <div id="language"></div>
+
 
             </div><!--/.nav-collapse -->
         </div>
