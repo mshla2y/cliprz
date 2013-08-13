@@ -16,14 +16,14 @@ Let's start and learn Cliprz framework by visiting Manual.
 
 Version
 =======
-2.0.0 Beta 2,  [Donwload](https://github.com/Cliprz/cliprz/archive/master.zip "Donwload").
+3.0.0 RC 1,  [Donwload](https://github.com/Cliprz/cliprz/archive/RC-3.0.0.zip "Donwload").
 
 * * *
 
 
 Documents
 =========
-On [Official github pages](http://cliprz.github.io/cliprz/ "Cliprz Official github pages")
+No docs for now
 
 
 * * *
@@ -86,7 +86,6 @@ With thanks
 ===========
 <ol>
   <li>Bruno Getulio - Add Brazil language in documents</li>
-  <li>Dhari Al Kalaf - Bugs Tracker</li>
 </ol>
 
 
