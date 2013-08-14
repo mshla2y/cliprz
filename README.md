@@ -16,7 +16,7 @@ Let's start and learn Cliprz framework by visiting Manual.
 
 Version
 =======
-3.0.0 RC 1,  [Donwload](https://github.com/Cliprz/cliprz/archive/RC-3.0.0.zip "Donwload").
+3.0.0 RC 2,  [Donwload](https://github.com/Cliprz/cliprz/archive/RC-3.0.0.zip "Donwload").
 
 * * *
 

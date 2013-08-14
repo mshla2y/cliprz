@@ -10,17 +10,17 @@ $_config = array(
      * Database configuration
      */
     /** Use MySQL database object, if TRUE MySQL database will enabled to use */
-    'enable_database'    => true,
+    'enable_database'    => false,
     /** Database Host name */
     'database_host'      => 'localhost',
     /** Database name */
-    'database_name'      => 'cliprz',
+    'database_name'      => '',
     /** Database Username */
-    'database_user'      => 'root',
+    'database_user'      => '',
     /** Database password */
     'database_pass'      => '',
     /** Database tables names prefix */
-    'database_prefix'    => 'cliprz_',
+    'database_prefix'    => '',
     /** Database port */
     'database_port'      => '',
     /** Database charset we prefer utf8 */
@@ -35,6 +35,7 @@ $_config = array(
      */
     #'project_url'      => null,
     'project_charset'  => 'UTF-8',
+    'project_language' => 'english',
 
     /**
      * Sessions and Cookies configuration

@@ -38,7 +38,9 @@ final class autoloader {
      * @access private
      * @static
      */
-    private static $_core = array('config','security','error','uri','router','http','view','session','language','model');
+    private static $_core = array(
+        'config','security','error','hooks','uri','router',
+        'http','cache','view','session','language','model');
 
     /**
      * Our loaded libraries

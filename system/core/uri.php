@@ -80,12 +80,12 @@ class cliprz_uri {
             $request_uri = mb_substr($request_uri,2);
         }
 
-        $parts = preg_split('#\?#i', $request_uri,2);
+        $_parts = preg_split('#\?#i', $request_uri,2);
 
-        $request_uri = $parts[0];
+        $request_uri = $_parts[0];
 
-        if (isset($parts[1])) {
-            $_SERVER['QUERY_STRING'] = $parts[1];
+        if (isset($_parts[1])) {
+            $_SERVER['QUERY_STRING'] = $_parts[1];
             parse_str($_SERVER['QUERY_STRING'],$_GET);
         } else {
             $_SERVER['QUERY_STRING'] = '';

@@ -40,6 +40,15 @@ class cliprz_database {
     private $connection;
 
     /**
+     * Config data
+     *
+     * @var object
+     *
+     * @access private
+     */
+    private $config;
+
+    /**
      * __CLASS__ constructor
      *
      * @access public

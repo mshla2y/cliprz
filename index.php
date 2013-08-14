@@ -55,3 +55,5 @@ if (file_exists(SYS_PATH.'bootstrap.php')) {
  * @name      index.php
  * @directory ./
  */
+
+# Don't use ?>

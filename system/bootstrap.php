@@ -24,11 +24,20 @@ require_once (SYS_PATH.'functions/common.php');
 /** call validate functions */
 require_once (SYS_PATH.'functions/validate_functions.php');
 
+/** call string functions */
+require_once (SYS_PATH.'functions/string_functions.php');
+
 /** call autoloader class to startup Cliprz framework */
 require_once (SYS_PATH.'core/autoloader.php');
 
+/** set a language variable as index array */
+$_language = array();
+
 /** startup Cliprz framework */
 autoloader::startup();
+
+/** call the system core functions */
+require_once (SYS_PATH.'functions/system.php');
 
 /** Run libraries */
 autoloader::run_libraries();
@@ -47,8 +56,11 @@ function &get_instance () {
     return cliprz::get_instance();
 }
 
+/** Get language package */
+$cliprz->language->get_package('arabic');
+
 /** define a website URL */
-defined('URL') or define('URL',website_url(),1);
+defined('URL') or define('URL',(isset($cliprz->config->project_url) ? $cliprz->config->project_url : website_url()),1);
 
 /** call and handling router */
 if (file_exists(APP_PATH.'config/router.php')) {

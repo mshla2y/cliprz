@@ -31,6 +31,20 @@ class cliprz {
     private static $_instance;
 
     /**
+     * Cliprz framework version
+     *
+     * @const string
+     */
+    const version = '3.0.0 RC2';
+
+    /**
+     * Cliprz framework version
+     *
+     * @const integer
+     */
+    const ver = 300;
+
+    /**
      * __CLASS__ constructor
      *
      * @access public
