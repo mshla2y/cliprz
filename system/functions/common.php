@@ -36,7 +36,7 @@ if (!function_exists('trim_separator')) {
             case 'left':
                 $path = ltrim(ltrim($path,DS),'/');
             break;
-            case 'both':
+            case 'right':
                 $path = rtrim(rtrim($path,DS),'/');
             break;
         }
