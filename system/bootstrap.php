@@ -59,9 +59,6 @@ function &get_instance () {
 /** Get language package */
 $cliprz->language->get_package('arabic');
 
-/** define a website URL */
-defined('URL') or define('URL',(isset($cliprz->config->project_url) ? $cliprz->config->project_url : website_url()),1);
-
 /** call and handling router */
 if (file_exists(APP_PATH.'config/router.php')) {
     require_once (APP_PATH.'config/router.php');
@@ -76,6 +73,7 @@ if (file_exists(APP_PATH.'config/router.php')) {
 #var_dump($cliprz);
 #pre_print_r(autoloader::loaded_list());
 #echo '<pre>'; var_dump(autoloader::loaded_list()); echo '</pre>';
+#pre_print_r($cliprz->http->user);
 
 /**
  * File information

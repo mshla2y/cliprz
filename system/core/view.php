@@ -23,22 +23,33 @@ class cliprz_view {
     /**
      * Display a view file from project views folder
      *
-     * @param string file name with directory if exists
-     * @param array  data as index array
+     * @param string  file name with directory if exists
+     * @param array   data as index array
+     * @param boolean Use caching system
+     * @param integer Cache expiration time as minutes, as in example 60 = 1 minute
      *
      * @access public
      */
-    public function display ($filename,$_data=null) {
+    public function display ($filename,$_data=null,$use_cache=false,$cache_time=null) {
         $view_file = APP_PATH.'project/views/'.trim_separator($filename).'.php';
         if (file_exists($view_file)) {
+
+            /** extract data */
             if (is_array($_data)) {
                 extract($_data);
             }
-            ob_start();
-            include_once ($view_file);
-            $contents = ob_get_contents();
-            ob_end_clean();
-            echo $contents;
+
+            /** check if using cache */
+            if ($use_cache === true) {
+                $cache = &autoloader::set('cache','core');
+                $cache->create($view_file,$_data,$cache_time);
+            } else {
+                ob_start();
+                include_once ($view_file);
+                $contents = ob_get_contents();
+                ob_end_clean();
+                echo $contents;
+            }
         } else {
             trigger_error($view_file.' file does not exists');
         }

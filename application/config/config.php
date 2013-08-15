@@ -55,6 +55,12 @@ $_config = array(
     'cookie_encrypt'        => 100,
 
     /**
+     * Cache configuration
+     */
+    /** Default cache time */
+    'cache_time' => 5 * 60, // 5 minutes
+
+    /**
      * Errors configuration
      */
     'DEVELOPMENT_ENVIRONMENT' => true,

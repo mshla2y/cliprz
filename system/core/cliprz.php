@@ -35,7 +35,7 @@ class cliprz {
      *
      * @const string
      */
-    const version = '3.0.0 RC2';
+    const version = '3.0.0 RC3';
 
     /**
      * Cliprz framework version

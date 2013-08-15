@@ -26,13 +26,19 @@ class cliprz_config {
      * @access public
      */
     public function __construct() {
-        global $_config;
         if (file_exists(APP_PATH.'config/config.php')) {
             require_once (APP_PATH.'config/config.php');
-            foreach ($_config as $key => $value) {
-                $this->$key = $value;
+            if (isset($_config)) {
+                foreach ($_config as $key => $value) {
+                    $this->$key = $value;
+                }
+                /** set the project and PHP encodeing */
+                $this->set_encoding();
+                /** define a website URL */
+                defined('URL') or define('URL',(isset($this->project_url) ? trim_separator($this->project_url).'/' : website_url()),1);
+            } else {
+                exit('We kill your project, the configuration file is bad.');
             }
-            $this->set_encoding();
         } else {
             exit(APP_PATH.'config/config.php not found');
         }

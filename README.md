@@ -16,7 +16,7 @@ Let's start and learn Cliprz framework by visiting Manual.
 
 Version
 =======
-3.0.0 RC 2,  [Donwload](https://github.com/Cliprz/cliprz/archive/RC-3.0.0.zip "Donwload").
+3.0.0 RC 3,  [Donwload](https://github.com/Cliprz/cliprz/archive/RC-3.0.0.zip "Donwload").
 
 * * *
 
@@ -85,7 +85,7 @@ Developers
 With thanks
 ===========
 <ol>
-  <li>Bruno Getulio - Add Brazil language in documents</li>
+  <li>Bruno Getulio - Add Brazil language in documents for 2.0.0 version</li>
 </ol>
 
 

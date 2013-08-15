@@ -145,9 +145,9 @@ class cliprz_session {
     private function hijacking () {
         $http = &autoloader::set('http','core');
         if (!$this->is_set('hijacking_user_ip')) {
-            $this->set('hijacking_user_ip',$http->ip());
+            $this->set('hijacking_user_ip',$http->user['ip']);
         } else {
-            if ($this->get('hijacking_user_ip') != $http->ip()) {
+            if ($this->get('hijacking_user_ip') != $http->user['ip']) {
                 $this->destroy();
             }
         }
